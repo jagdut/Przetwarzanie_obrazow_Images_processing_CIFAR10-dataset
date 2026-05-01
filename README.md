@@ -11,12 +11,17 @@ z normalizacją, dropoutem i regularyzacją L2 — na zbiorze CIFAR-10
 **Najlepszy wynik: ~75%+ dokładności na zbiorze testowym** (3-warstwowa CNN, 20 epok).
 
 ## Wyniki
-
 | Model | Architektura | Regularyzacja | Dokładność testowa |
 |-------|-------------|---------------|--------------------|
-| Baseline FC | 3× Linear | — | ~40% |
-| ConvNet v1 | 2× Conv + FC | BatchNorm | ~65% |
-| ConvNet v2 | 3× Conv + klasyfikator | Dropout 0.5, Weight Decay | ~75%+ |
+| Baseline FC* | 3× Linear | — | ~25% |
+| ConvNet v1 | 2× Conv + FC | BatchNorm | 62.1% |
+| ConvNet v2 | 3× Conv + klasyfikator | Dropout 0.5 | 70.1% |
+| ConvNet v3 | 3× Conv, Tanh/LeakyReLU | Dropout 0.5 | 62.7% |
+| ConvNet v4 | 2× Conv + Dropout | Weight Decay | 65.2% |
+| ConvNet v5 | 2× Conv, LeakyReLU | Dropout + Weight Decay | 68.5% |
+| **ConvNet v2 finalny** | 3× Conv + klasyfikator | Dropout 0.5, Weight Decay | **77.6%** |
+
+*Model FC trenowany na 1000 próbkach (walidacja), bez ewaluacji na zbiorze testowym
 
 ## Architektura najlepszego modelu
 ```
