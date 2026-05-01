@@ -47,10 +47,11 @@ Aby uruchomić należy otworzyć plik `przetwarzanie_obrazow_cifar10.ipynb` w Ju
 
 ## Wnioski
 
-- Sieci w pełni połączone osiągają ok. 40% — niewystarczające dla danych przestrzennych
-- Normalizacja (BatchNorm) istotnie stabilizuje proces uczenia
+- Sieci w pełni połączone osiągają ok. 25% — niewystarczające dla danych przestrzennych
+- Normalizacja (BatchNorm) powoduje stabilizację procesu uczenia
 - 3 bloki konwolucyjne ze wzrastającą liczbą filtrów (32→64→128) przewyższają mniejsze sieci
 - Dropout (p=0.5) w klasyfikatorze skutecznie ogranicza przeuczenie
+
 
 ## Technologie
 
