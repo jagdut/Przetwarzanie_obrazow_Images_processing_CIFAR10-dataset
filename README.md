@@ -1,0 +1,1 @@
+# Przetwarzanie-obraz-w-Images-processing---CIFAR10-dataset
